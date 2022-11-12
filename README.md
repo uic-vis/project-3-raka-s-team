@@ -1,4 +1,4 @@
-# Web-based System Creation for Divvy Data Visualisations
+# Web-Based Visualisation System for Divvy Data Analysis
 
 ## 👥 Group Members
 
@@ -6,7 +6,7 @@ Raka Primardika (aprima3@uic.edu), Khanh Duy Nguyen (knguye71@uic.edu)
 
 ## 👨🏻‍🏫 Note to Grader/Instructor
 
-Our domain/data queations, analyses, reasoninggs can be found in the [💬 Summary](#💬-summary) section below.
+Our domain/data queations, analyses, reasonings can be found in the [💬 Summary](#💬-summary) section below.
 
 We are using _<insert here>_ to host our web page.
 
