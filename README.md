@@ -1,5 +1,11 @@
 # Web-Based Visualisation System for Divvy Data Analysis
 
+## 🗒️ Sketches
+
+**V1**. Import our Project 2 plots, somehow. Mainly the map-line plot and the slider-scatterplot.
+
+<img src="sketches/webpage-design-v01.png" alt="Sketch V01" width="500"/>
+
 ## 👥 Group Members
 
 Raka Primardika (aprima3@uic.edu), Khanh Duy Nguyen (knguye71@uic.edu)
