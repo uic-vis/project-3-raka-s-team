@@ -2,9 +2,13 @@
 
 ## 🗒️ Sketches
 
-**V1**. Import our Project 2 plots, somehow. Mainly the map-line plot and the slider-scatterplot.
+I guess our first task is to figure out an ideal layout for our web page. Two basic concepts I thought of, but happy to deviate from.
 
-<img src="sketches/webpage-design-v01.png" alt="Sketch V01" width="500"/>
+**V1** (left). Condense our Project 2 plots such that all viewable without scrolling, somehow.
+
+**V2** (right). Tell a story about the plots, from top to bottom, showcasing all plots with scrolling.
+
+<img src="sketches/webpage-design-v01.png" alt="Sketch V01" width="400"/> <img src="sketches/webpage-design-v02.png" alt="Sketch V01" width="400"/>
 
 ## 👥 Group Members
 
