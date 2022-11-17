@@ -6,44 +6,51 @@ function getMap(coordinates, zoom) {
       // attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
 
-  // color = d3.scaleLinear()
-  //   .domain(d3.extent(statesData, d => screen.properties.density)).nice()
-  //   .range([0,1]);
+  // function style(feature) {
 
-  function getColor(d) {
-    return d > 1000 ? '#91003f' :
-           d > 500  ? '#ce1256' :
-           d > 200  ? '#e7298a' :
-           d > 100  ? '#df65b0' :
-           d > 50   ? '#c994c7' :
-           d > 20   ? '#d4b9da' :
-           d > 10   ? '#e7e1ef' :
-                      '#f7f4f9' ;
-  }
+  //   var colorScale = d3.scaleQuantize()
+  //     .domain([0, 1000])
+  //     .range(colorbrewer.YlOrRd[9]);
 
-  function style(feature) {
+  //   return {
+  //     // fillColor: getColor(feature.properties.density),
+  //     // fillColor: "#ff00ff",
+  //     fillColor: colorScale(feature.properties.density),
+  //     weight: 2,
+  //     opacity: 1,
+  //     color: 'black',
+  //     dashArray: '1',
+  //     fillOpacity: 0.7
+  //   };
+  // }
 
-    var colorScale = d3.scaleQuantize()
-      .domain([0, 1000])
-      .range(colorbrewer.YlOrRd[9]);
+  // function onEachFeature(feature, layer) {
+  //   console.log(feature);
+  // }
 
-    return {
-      // fillColor: getColor(feature.properties.density),
-      // fillColor: "#ff00ff",
-      fillColor: colorScale(feature.properties.density),
-      weight: 2,
-      opacity: 1,
-      color: 'black',
-      dashArray: '1',
-      fillOpacity: 0.7
-    };
-  }
-
-  function onEachFeature(feature, layer) {
-    console.log(feature);
-  }
-
-  L.geoJSON(statesData, {style: style, onEachFeature: onEachFeature}).addTo(map);
+  // L.geoJSON(statesData, {style: style, onEachFeature: onEachFeature}).addTo(map);
 }
 
-d3 = require("d3")
+// function loadData(filename) {
+//   const arr = [];
+//   return d3.csv(filename, function(data) {
+//     // arr.push(data);
+//     // console.log(data);
+//   });
+//   // return arr;
+// }
+
+// function cleanData(data) {
+
+
+// }
+
+// function init(){
+//   const raw = loadData("data/202210-divvy-tripdata.csv");
+//   console.log(raw);
+// }
+
+// window.onload = init;
+
+// raw = d3.csv("/data/divvy_dataset.csv", function(data) {});
+// console.log(raw);

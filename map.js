@@ -1,2 +1,2 @@
-const usa = [37.8, -96]
-getMap(usa, 4);
+const chicagoCoordinates = [41.8781, -87.64]
+getMap(chicagoCoordinates, 11);

@@ -64,3 +64,7 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 ## 💬 Summary
 
 _TODO: Add summary here_
+
+## References
+
+- [Divvy Data](https://divvy-tripdata.s3.amazonaws.com/index.html)

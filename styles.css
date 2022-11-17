@@ -1,27 +1,31 @@
-/* body {
-  height: 100vh;
-}
-
-.header {
-  height: 15vh;
-  background-color: aqua;
-}
-
-#map {
-  height: 85vh;
-  width: 30%;
-} */
-
 #map {
   position: absolute;
-  height: 100%;
-  width: 70%;
+  height: 90%;
+  width: 25%;
 }
 
-#plot {
+#header {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+#plot-matrix {
   position:absolute;
-  height: 100%;
-  width: 28%;
-  left:72%;
+  height: 90%;
+  width:75%;
+  right:0%;
+  background-color: grey;
+}
+
+#plot1 {
+  height: 50%;
+  width: 50%;
   background-color: aquamarine;
+}
+
+#plot2 {
+  height: 50%;
+  width: 50%;
+  background-color: yellow;
 }
