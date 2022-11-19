@@ -2,19 +2,17 @@
 
 ## 🗒️ Sketches
 
-I guess our first task is to figure out an ideal layout for our web page. Two basic concepts I thought of, but happy to deviate from.
+Sketches can be found in the `sketches/` folder.
 
-**V1**. Condense our Project 2 plots such that all viewable without scrolling, somehow.
+Concept is to have several _modes_ of plots. A rough draft is shown in [V3](sketches/webpage-design-v03.png).
 
-<img src="sketches/webpage-design-v01.png" alt="Sketch V01" width="400"/>
+<img src="sketches/webpage-design-v03.png" alt="Sketch V03" width="500"/>
 
-**V2**. Tell a story about the plots, from top to bottom, showcasing all plots with scrolling.
+Propose to have three modes: brush mode, slider mode and a third one TBD. The first two are Project 2 plots/adaptations.
 
-<img src="sketches/webpage-design-v02.png" alt="Sketch V02" width="400"/>
+_Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). Minimalist, straight-to-the-point and easy to use is the intention.
 
-**V3**. Interface based on "modes", where the map/slider/drop-down gets enabled/disabled depending on the mode.
-
-<img src="sketches/webpage-design-v03.png" alt="Sketch V03" width="400"/>
+<img src="sketches/webpage-design-v04.png" alt="Sketch V04" width="500"/>
 
 ## 👥 Group Members
 
