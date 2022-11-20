@@ -69,11 +69,15 @@ TODO: Add this section.
 
 ### Domain Questions
 
-From our previous project, we have already compiled a set of exploratory questions:
+From our [previous project](https://github.com/uic-vis/project-2-raka-s-team), we have already compiled a set of exploratory questions:
 
 - Q01: Do paid members use more e-bikes than non-paid users?
 - Q02: At which times of the day do UIC students use Divvy bikes the most?
 - Q03: Do people ride faster and farther in the afternoon compared to morning time?
+
+In this project, we would like to explore new inquiries, relevant to the ones fom the previous project.
+  
+- Q04: Do most people ride towards the city centre in the mornings and away in afternoons?
 
 ### Dataset Description
 
