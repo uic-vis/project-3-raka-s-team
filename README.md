@@ -4,15 +4,15 @@
 
 Sketches can be found in the `sketches/` folder.
 
-Concept is to have several _modes_ of plots. A rough draft is shown in [V3](sketches/webpage-design-v03.png).
+Concept is to have several _modes_ of plots. We propose to have three modes: brush mode, slider mode and a third one TBD. The first two are Project 2 plots/adaptations.
 
-<img src="sketches/webpage-design-v03.png" alt="Sketch V03" width="500"/>
-
-Propose to have three modes: brush mode, slider mode and a third one TBD. The first two are Project 2 plots/adaptations.
-
-_Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). Minimalist, straight-to-the-point and easy to use is the intention.
+### Modes
 
 <img src="sketches/webpage-design-v04.png" alt="Sketch V04" width="500"/>
+
+<img src="sketches/webpage-design-v05.png" alt="Sketch V05" width="500"/>
+
+_Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). It is our linked view line plot from P2, where the interaction is from brushing points on the map. _Slider mode_ concept is shown in [V5](sketches/webpage-design-v05.png). It is our single view scatterplot from P2, where the interaction is from using a slider. In this project, we propose to add a new linked _flow map_.
 
 ## 👥 Group Members
 
@@ -20,7 +20,7 @@ Raka Primardika (aprima3@uic.edu), Khanh Duy Nguyen (knguye71@uic.edu)
 
 ## 👨🏻‍🏫 Note to Grader/Instructor
 
-Our domain/data queations, analyses, reasonings can be found in the [💬 Summary](#💬-summary) section below.
+Our domain/data questions, analyses, reasonings can be found in the [💬 Summary](#💬-summary) section below.
 
 We are using _<insert here>_ to host our web page.
 
@@ -62,6 +62,36 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 ## 💬 Summary
 
 _TODO: Add summary here_
+
+### Background
+
+TODO: Add this section.
+
+### Domain Questions
+
+From our previous project, we have already compiled a set of exploratory questions:
+
+- Q01: Do paid members use more e-bikes than non-paid users?
+- Q02: At which times of the day do UIC students use Divvy bikes the most?
+- Q03: Do people ride faster and farther in the afternoon compared to morning time?
+
+### Dataset Description
+
+Don't forget this now... 🤦‍♂️
+
+### Data Questions
+
+- QXX: How do _e-bike and normal bike ridership_ ratios differ for each _membership type_?
+- QXX: Given a _region_ in Chicago, how does the _number of all Divvy rides_ change for each _hour of the day_?
+- QXX: Given a _time of the day_, how do _distance_ and _duration_ of trips compare for both _types of bikes_?
+
+### Interface Design
+
+### Plot Choices
+
+### Analysis and Findings
+
+### Future Work
 
 ## References
 
