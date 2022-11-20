@@ -50,7 +50,7 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
   - [ ] _Two_ interactive visualisations from _Project 2_.
   - [ ] _New_ multiple linked view visualisationusing a _different_ interaction mechanism.
   - [ ] _New_ spatial view visualisation. Recommended: link to other visualisations.
-  
+
 ### Deliverables
 
 - [ ] This markdown document.
@@ -61,11 +61,9 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 
 ## 💬 Summary
 
-_TODO: Add summary here_
-
 ### Background
 
-TODO: Add this section.
+We are analysing data from Divvy bicycle rideshare service in Chicago, IL, USA. For this project, we are analysing data from the last week of October 2022 (_24/10/2022 - 30/10/2022_). We limit ourselves to this for the purpose of efficiency. We believe that this is still sufficient data to derive meaningful knowledge and would be very good practice on designing a working visualisation interface.
 
 ### Domain Questions
 
@@ -76,10 +74,14 @@ From our [previous project](https://github.com/uic-vis/project-2-raka-s-team), w
 - Q03: Do people ride faster and farther in the afternoon compared to morning time?
 
 In this project, we would like to explore new inquiries, relevant to the ones fom the previous project.
-  
+
 - Q04: Do most people ride towards the city centre in the mornings and away in afternoons?
 
+**Q04** was inspired from the previous findings of **Q03**. We showed that there are more rides in the afternoon compared to morning time. We want to extend this to analyse the spatial ements of this inquiry. Among those morning and afternoon rides, we believe that most of the morning rides are people going to work, to the city centre. Afternoon rides (which are more popular) are ones where people will go away from the city centre.
+
 ### Dataset Description
+
+TODO: Mention columns, attribute types, etc.
 
 Don't forget this now... 🤦‍♂️
 
