@@ -4,7 +4,7 @@
 
 Sketches can be found in the `sketches/` folder.
 
-Concept is to have several _modes_ of plots. We propose to have three modes: brush mode, slider mode and a third one TBD. The first two are Project 2 plots/adaptations.
+Concept is to have several _modes_ of plots. We propose to have three modes: brush mode, slider mode and select mode.
 
 ### Modes
 
@@ -12,7 +12,9 @@ Concept is to have several _modes_ of plots. We propose to have three modes: bru
 
 <img src="sketches/webpage-design-v05.png" alt="Sketch V05" width="500"/>
 
-_Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). It is our linked view line plot from P2, where the interaction is from brushing points on the map. _Slider mode_ concept is shown in [V5](sketches/webpage-design-v05.png). It is our single view scatterplot from P2, where the interaction is from using a slider. In this project, we propose to add a new linked _flow map_.
+<img src="sketches/webpage-design-v06.png" alt="Sketch V06" width="500"/>
+
+_Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). It is our linked view line plot from P2, where the interaction is from brushing points on the map. _Slider mode_ concept is shown in [V5](sketches/webpage-design-v05.png). It is our single view scatterplot from P2, where the interaction is from using a slider. In this project, we propose to add a new linked _flow map_. _Select mode_ allows interaction of selecting parts of the pie chart. The selected data is represented in the heat map and the bar chart.
 
 ## 👥 Group Members
 
