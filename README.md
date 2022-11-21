@@ -1,20 +1,24 @@
 # Web-Based Visualisation System for Divvy Data Analysis
 
+## 🔗 Quick Links
+
+- [Observable Testing Collection](https://observablehq.com/collection/@rakaprimardika/cs-424-project-3) to practice making the plots without worrying about HTML placement.
+- [React Tutorials and Documentation](https://reactjs.org/)
+- [Leaflet Index Page](https://leafletjs.com/index.html)
+- [Leaflet Basic Shapes](https://www.igismap.com/leafletjs-point-polyline-polygon-rectangle-circle/)
+
+
 ## 🗒️ Sketches
 
 Sketches can be found in the `sketches/` folder.
 
 Concept is to have several _modes_ of plots. We propose to have three modes: brush mode, slider mode and select mode.
 
-### Modes
-
-<img src="sketches/webpage-design-v04.png" alt="Sketch V04" width="500"/>
-
-<img src="sketches/webpage-design-v05.png" alt="Sketch V05" width="500"/>
-
-<img src="sketches/webpage-design-v06.png" alt="Sketch V06" width="500"/>
-
-_Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). It is our linked view line plot from P2, where the interaction is from brushing points on the map. _Slider mode_ concept is shown in [V5](sketches/webpage-design-v05.png). It is our single view scatterplot from P2, where the interaction is from using a slider. In this project, we propose to add a new linked _flow map_. _Select mode_ allows interaction of selecting parts of the pie chart. The selected data is represented in the heat map and the bar chart.
+| Brush Mode | Slider Mode | Select Mode |
+| :----------: | :-----------: | :-----------: |
+| ![](sketches/webpage-design-v04.png) | ![](sketches/webpage-design-v05.png) | ![](sketches/webpage-design-v06.png) |
+| _Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). It is our linked view line plot from P2, where the interaction is from brushing points on the map. | _Slider mode_ concept is shown in [V5](sketches/webpage-design-v05.png). It is our single view scatterplot from P2, where the interaction is from using a slider. In this project, we propose to add a **new linked** _flow map_. | _Select mode_ concept is shown in [V6](sketches/webpage-design-v06.png). It allows interaction of selecting parts of the pie chart. The selected data is represented in the **new** heat map and the **new** bar chart. |
+| _map scatter plot (spatial, linked, interact)_, _line chart (linked)_ | slider (interact), _scatter plot (linked)_, _flow map (spatial, linked)_ | _pie chart (interact, linked)_, _heat map (spatial, linked)_, _bar chart (linked)_ |
 
 ## 👥 Group Members
 
@@ -78,8 +82,11 @@ From our [previous project](https://github.com/uic-vis/project-2-raka-s-team), w
 In this project, we would like to explore new inquiries, relevant to the ones fom the previous project.
 
 - Q04: Do most people ride towards the city centre in the mornings and away in afternoons?
+- Q05: Which communities have more Divvy members than casual riders?
 
 **Q04** was inspired from the previous findings of **Q03**. We showed that there are more rides in the afternoon compared to morning time. We want to extend this to analyse the spatial ements of this inquiry. Among those morning and afternoon rides, we believe that most of the morning rides are people going to work, to the city centre. Afternoon rides (which are more popular) are ones where people will go away from the city centre.
+
+**Q05** explores our thoughts on the socio-economic aspect of Divvy users. We think that the communities which are higher up in the socio-economic ladder have more people who are Divvy members (who subscribe to the $120/year fee). We wanted to know if this is true, hoping to create a ranking of the communities' divvy membership rates. This inquiry is an extension from the results of **Q01**.
 
 ### Dataset Description
 
