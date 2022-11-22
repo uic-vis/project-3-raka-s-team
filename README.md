@@ -20,6 +20,15 @@ Concept is to have several _modes_ of plots. We propose to have three modes: bru
 | _Brush mode_ concept is shown in [V4](sketches/webpage-design-v04.png). It is our linked view line plot from P2, where the interaction is from brushing points on the map. | _Slider mode_ concept is shown in [V5](sketches/webpage-design-v05.png). It is our single view scatterplot from P2, where the interaction is from using a slider. In this project, we propose to add a **new linked** _flow map_. | _Select mode_ concept is shown in [V6](sketches/webpage-design-v06.png). It allows interaction of selecting parts of the pie chart. The selected data is represented in the **new** heat map and the **new** bar chart. |
 | _map scatter plot (spatial, linked, interact)_, _line chart (linked)_ | slider (interact), _scatter plot (linked)_, _flow map (spatial, linked)_ | _pie chart (interact, linked)_, _heat map (spatial, linked)_, _bar chart (linked)_ |
 
+## 🏞️ Leaflet Concepts
+
+For each mode, we propose to use the following Leaflet functionalities:
+
+| Brush Mode | Slider Mode | Select Mode |
+| :----------: | :-----------: | :-----------: |
+| Leaflet Draw | Lines? | External GeoJSON |
+| ![](images/L-draw-brush-mode-concept.png) | TBD | ![](images/L-geojson-heatmap-concept.png) |
+
 ## 👥 Group Members
 
 Raka Primardika (aprima3@uic.edu), Khanh Duy Nguyen (knguye71@uic.edu)
@@ -111,3 +120,4 @@ Don't forget this now... 🤦‍♂️
 ## References
 
 - [Divvy Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
+- [Leaflet Draw Library Links](https://cdnjs.com/libraries/leaflet.draw)
