@@ -28,6 +28,7 @@ For each mode, we propose to use the following Leaflet functionalities:
 | :----------: | :-----------: | :-----------: |
 | Leaflet Draw | Lines? | External GeoJSON |
 | ![](images/L-draw-brush-mode-concept.png) | TBD | ![](images/L-geojson-heatmap-concept.png) |
+| We should probably restrict to only one drawing tool. Using all of the tools would be overkill. | TBD | Tracts proved to be too small, but might be useful should we choose to have a zooming functionality. |
 
 ## 👥 Group Members
 
@@ -57,8 +58,8 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 
 ### Tasks
 
-- [ ] Choose a _web hosting service_.
-- [ ] Sketch a design plan for the website.
+- [x] Choose a _web hosting service_. Most Likely **GitHub Pages**.
+- [x] Sketch a design plan for the website.
 - [ ] Create an empty website with various components.
 - [ ] JavaScript code to load in data.
 - [ ] Visualisation Requirements:
