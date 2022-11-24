@@ -61,7 +61,7 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 - [x] Choose a _web hosting service_. Most Likely **GitHub Pages**.
 - [x] Sketch a design plan for the website.
 - [ ] Create an empty website with various components.
-- [ ] JavaScript code to load in data.
+- [x] JavaScript code to load in data.
 - [ ] Visualisation Requirements:
   - [ ] _Two_ interactive visualisations from _Project 2_.
   - [ ] _New_ multiple linked view visualisationusing a _different_ interaction mechanism.
@@ -79,36 +79,11 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 
 ### Background
 
-We are analysing data from Divvy bicycle rideshare service in Chicago, IL, USA. For this project, we are analysing data from the last week of October 2022 (_24/10/2022 - 30/10/2022_). We limit ourselves to this for the purpose of efficiency. We believe that this is still sufficient data to derive meaningful knowledge and would be very good practice on designing a working visualisation interface.
-
-### Domain Questions
-
-From our [previous project](https://github.com/uic-vis/project-2-raka-s-team), we have already compiled a set of exploratory questions:
-
-- Q01: Do paid members use more e-bikes than non-paid users?
-- Q02: At which times of the day do UIC students use Divvy bikes the most?
-- Q03: Do people ride faster and farther in the afternoon compared to morning time?
-
-In this project, we would like to explore new inquiries, relevant to the ones fom the previous project.
-
-- Q04: Do most people ride towards the city centre in the mornings and away in afternoons?
-- Q05: Which communities have more Divvy members than casual riders?
-
-**Q04** was inspired from the previous findings of **Q03**. We showed that there are more rides in the afternoon compared to morning time. We want to extend this to analyse the spatial ements of this inquiry. Among those morning and afternoon rides, we believe that most of the morning rides are people going to work, to the city centre. Afternoon rides (which are more popular) are ones where people will go away from the city centre.
-
-**Q05** explores our thoughts on the socio-economic aspect of Divvy users. We think that the communities which are higher up in the socio-economic ladder have more people who are Divvy members (who subscribe to the $120/year fee). We wanted to know if this is true, hoping to create a ranking of the communities' divvy membership rates. This inquiry is an extension from the results of **Q01**.
+We are analysing data from Divvy bicycle rideshare service in Chicago, IL, USA. Both of us are regular uses of the service, which adds to our familiarity and interest on working with their data.
 
 ### Dataset Description
 
-TODO: Mention columns, attribute types, etc.
-
-Don't forget this now... 🤦‍♂️
-
-### Data Questions
-
-- QXX: How do _e-bike and normal bike ridership_ ratios differ for each _membership type_?
-- QXX: Given a _region_ in Chicago, how does the _number of all Divvy rides_ change for each _hour of the day_?
-- QXX: Given a _time of the day_, how do _distance_ and _duration_ of trips compare for both _types of bikes_?
+The dataset we are handling spans from 24/10/2022 through 30/10/2022, which is only one week of data. This is _~85000_ rows. We believe that even though this is little, it's still sufficient to gather meaningful knowledge from the visualisations created from the data. We wanted to at least make sure we get all the days in the week, so that we can compare between the days.
 
 ### Interface Design
 
