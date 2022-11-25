@@ -85,6 +85,8 @@ We are analysing data from Divvy bicycle rideshare service in Chicago, IL, USA. 
 
 The dataset we are handling spans from 24/10/2022 through 30/10/2022, which is only one week of data. This is _~85000_ rows. We believe that even though this is little, it's still sufficient to gather meaningful knowledge from the visualisations created from the data. We wanted to at least make sure we get all the days in the week, so that we can compare between the days.
 
+The dataset contains various information: start and end time, start and end coordinates, member types, bike types, station IDs and ride IDs. We are most interested in the spatiotemporal data, combining them with the bike and member type data to produce meaningful plots.
+
 ### Interface Design
 
 ### Plot Choices

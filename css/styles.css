@@ -29,3 +29,7 @@
   width: 50%;
   background-color: yellow;
 }
+
+.leaflet-draw-actions {
+  z-index: 10000;
+}

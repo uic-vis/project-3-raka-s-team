@@ -23,11 +23,11 @@ function brushMap(coordinates, zoom) {
             polygon: {
                 allowIntersection: false, // Restricts shapes to simple polygons
                 drawError: {
-                color: '#e1e100', // Color the shape will turn when intersects
+                color: 'gray', // Color the shape will turn when intersects
                 message: '<strong>Oh snap!<strong> you can\'t draw that!' // Message that will show when intersect
                 },
                 shapeOptions: {
-                color: '#97009c'
+                color: 'gray'
                 }
             },
             // disable toolbar item by setting it to false
@@ -39,7 +39,7 @@ function brushMap(coordinates, zoom) {
         },
         edit: {
             featureGroup: editableLayers, //REQUIRED!!
-            remove: false
+            remove: true
         }
     };
 
@@ -54,22 +54,21 @@ function brushMap(coordinates, zoom) {
         var type = e.layerType,
         layer = e.layer;
 
-        if (type === 'marker') {
-            layer.bindPopup('A popup!');
-        } else if (type === 'polygon') {
+        if (type === 'polygon') {
             console.log("a polygon has been created");
         }
         // editableLayers.removeLayer(window.prevLayer);
         // window.prevLayer = layer;
         editableLayers.addLayer(layer);
-        console.log(editableLayers);
-        // $('button#cancelButton').on('click', function () {
-        //     featureGroup.removeLayer(e.layer);
-        // });
+        brush = layer.toGeoJSON();
+        console.log(brush);
+        
+        // update the circles, colour the ones within the brush
+        updateCircles(window.data, layer);
     });
 
     // const data = loadData("/data/divvy_dataset.csv", function() {console.log("done")});
-    addCircles(map, window.data, 1000);
+    addCircles(map, window.data, 5000);
 }
 
 /**
@@ -80,9 +79,8 @@ function brushMap(coordinates, zoom) {
  * @returns 
  */
 function addCircles(map, data, pointsToRender) {
-    const circles = [];
-    for (let i = 0; i < pointsToRender; i++) {
-        var ride = data[i];
+    for (let ride of data) {
+        // var ride = data[i];
         var lat = ride.start_lat;
         var lon = ride.start_lng;
         var type = ride.rideable_type;
@@ -95,8 +93,30 @@ function addCircles(map, data, pointsToRender) {
         }
       
         var circle = L.circle(circleCentre, 20, circleOptions);
-        circle.addTo(map);
-        circles.push(circle);
+        // circle.addTo(map);
+        ride["map_circle"] = circle;
     }
-    return circles;
+
+    for (let i = 0; i < pointsToRender; i++) {
+        data[i].map_circle.addTo(map);
+    }
+}
+
+function updateCircles(data, brush) {
+    console.log(data);
+    for (let ride of data) {
+        if (brush.contains(ride.map_circle.getLatLng())) {
+            ride.map_circle.setStyle({
+                color: (ride.rideable_type == 'electric_bike') ? LYFTPINK : DIVVYBLUE,
+                fillColor: (ride.rideable_type == 'electric_bike') ? LYFTPINK : DIVVYBLUE,
+                fillOpacity: 1
+            });
+        } else {
+            ride.map_circle.setStyle({
+                color: 'gray',
+                fillColor: 'gray',
+                fillOpacity: 1
+            });
+        }
+    }
 }

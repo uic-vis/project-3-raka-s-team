@@ -30,3 +30,32 @@ function distBetween2Points(lat1, lon1, lat2, lon2) {
 
     return dist;
 }
+
+/**
+ * Determine whether a point is inside a Leaflet polygon
+ * @param {Number} x point latitude
+ * @param {Number} y point longitude
+ * @param {JSON Object} poly Leaflet polygon
+ * @returns 
+ */
+function isPointInsidePolygon(marker, poly) {
+    // ref: https://stackoverflow.com/questions/31790344/determine-if-a-point-reside-inside-a-leaflet-polygon
+    var polyPoints = poly.getLatLngs();       
+    console.log(polyPoints);
+    var x = marker.getLatLng().lat, y = marker.getLatLng().lng;
+    console.log(x, y);
+
+    var inside = false;
+    for (var i = 0, j = polyPoints.length - 1; i < polyPoints.length; j = i++) {
+        var xi = polyPoints[i].lat, yi = polyPoints[i].lng;
+        var xj = polyPoints[j].lat, yj = polyPoints[j].lng;
+
+        var intersect = ((yi > y) != (yj > y))
+            && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+        if (intersect) inside = !inside;
+    }
+
+    console.log(inside);
+
+    return inside;
+};

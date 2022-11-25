@@ -4,7 +4,7 @@ const chicagoCoordinates = [41.8781, -87.50]
  * Renders the map, innit... it's in the name
  */
 function renderMap() {
-    let mode = "select";  // TODO: make buttons to switch between modes
+    let mode = "brush";  // TODO: make buttons to switch between modes
     if (mode === 'brush') {
         brushMap(chicagoCoordinates, 12);
     } else if (mode === 'slider') {

@@ -42,7 +42,6 @@ function loadData(filename) {
 }
 
 function init() {
-    console.log("Hello, world");
     loadData("./data/divvy_dataset.csv");
 }
 
