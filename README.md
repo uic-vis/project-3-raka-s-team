@@ -10,7 +10,6 @@
   - [Flowmap Tutorial](https://neiugis.github.io/lab6/)
 - [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat)
 
-
 ### Provisional Webpage Link
 
 - [Our Webpage](https://duynguyen2001.github.io/Project3CS424/), hosted with **GitHub Pages**
@@ -35,7 +34,7 @@ For each mode, we propose to use the following Leaflet functionalities:
 | :----------: | :-----------: | :-----------: |
 | Leaflet Draw | Lines? | External GeoJSON |
 | ![](images/L-draw-brush-mode-concept.png) | TBD | ![](images/L-geojson-heatmap-concept.png) |
-| We should probably restrict to only one drawing tool. Using all of the tools would be overkill. | TBD | Tracts proved to be too small, but might be useful should we choose to have a zooming functionality. |
+| Restrict to only the polygon drawing tool | We don't plan to add any map layers here. | We plan to change this to use [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat) |
 
 ## 👥 Group Members
 
