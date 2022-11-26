@@ -6,7 +6,13 @@
 - [React Tutorials and Documentation](https://reactjs.org/)
 - [Leaflet Index Page](https://leafletjs.com/index.html)
 - [Leaflet Basic Shapes](https://www.igismap.com/leafletjs-point-polyline-polygon-rectangle-circle/)
+- [Leaflet Canvas Flowmap Layer](https://www.datarevelapp.com/leaflet_canvas/)
+  - [Flowmap Tutorial](https://neiugis.github.io/lab6/)
 
+
+### Provisional Webpage Link
+
+- [Our Webpage](https://duynguyen2001.github.io/Project3CS424/), hosted with **GitHub Pages**
 
 ## 🗒️ Sketches
 
@@ -36,7 +42,7 @@ Raka Primardika (aprima3@uic.edu), Khanh Duy Nguyen (knguye71@uic.edu)
 
 ## 👨🏻‍🏫 Note to Grader/Instructor
 
-Our domain/data questions, analyses, reasonings can be found in the [💬 Summary](#💬-summary) section below.
+Our descriptions, results and reasonings can be found in the [💬 Summary](#💬-summary) section below.
 
 We are using _<insert here>_ to host our web page.
 
@@ -58,9 +64,9 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 
 ### Tasks
 
-- [x] Choose a _web hosting service_. Most Likely **GitHub Pages**.
+- [x] Choose a _web hosting service_. **GitHub Pages**.
 - [x] Sketch a design plan for the website.
-- [ ] Create an empty website with various components.
+- [x] Create an empty website with various components.
 - [x] JavaScript code to load in data.
 - [ ] Visualisation Requirements:
   - [ ] _Two_ interactive visualisations from _Project 2_.
@@ -72,7 +78,7 @@ Can be found on this [direct link](https://fmiranda.me/courses/cs424-fall-2022/p
 - [ ] This markdown document.
 - [ ] Source code and data files.
 - [ ] Screenshot (`.png`) of visualisation interface.
-- [ ] _Link_ to a web page hosting our interface.
+- [x] _Link_ to a web page hosting our interface.
 - [ ] Presentation **without** slides. Present web page interface live.
 
 ## 💬 Summary
