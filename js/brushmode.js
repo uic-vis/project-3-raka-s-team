@@ -68,7 +68,30 @@ function brushMap(coordinates, zoom) {
     });
 
     // const data = loadData("/data/divvy_dataset.csv", function() {console.log("done")});
-    addCircles(map, window.data, 5000);
+    addCircles(map, window.data, 0);
+
+
+    // ref: https://github.com/Leaflet/Leaflet.heat
+    const normalPoints = [];
+    const electricPoints = [];
+    for (let ride of window.data) {
+        if (ride.rideable_type === 'electric_bike') {
+            electricPoints.push(ride.map_circle.getLatLng());
+        } else {
+            normalPoints.push(ride.map_circle.getLatLng());
+        }
+    }
+
+    L.heatLayer(electricPoints, {
+        radius: 25,
+        gradient: {0.5: '#ff8ff4', 0.97: '#e831d6', 1: '#850077'},
+        blur: 20,
+    }).addTo(map);
+    // L.heatLayer(normalPoints, {
+    //     radius: 25,
+    //     // gradient: {0.4: '#98def5', 0.65: '#34a8cf', 1: '#004359'},
+    //     blur: 20,
+    // }).addTo(map);
 }
 
 /**

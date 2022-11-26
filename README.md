@@ -8,6 +8,7 @@
 - [Leaflet Basic Shapes](https://www.igismap.com/leafletjs-point-polyline-polygon-rectangle-circle/)
 - [Leaflet Canvas Flowmap Layer](https://www.datarevelapp.com/leaflet_canvas/)
   - [Flowmap Tutorial](https://neiugis.github.io/lab6/)
+- [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat)
 
 
 ### Provisional Webpage Link

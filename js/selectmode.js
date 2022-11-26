@@ -4,6 +4,9 @@
  * @param {Number} zoom how big the map is, preferably 11 to 14
  */
 function selectMap(coordinates, zoom, geojson) {
+
+    updateJson(window.data, geojson);
+
     var map = L.map('map').setView(coordinates, zoom);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png', {
@@ -26,4 +29,18 @@ function selectMap(coordinates, zoom, geojson) {
 
     L.geoJSON(geojson, {style: style1}).addTo(map);
 
+}
+
+function updateJson(data, geojson) {
+    console.log(data);
+    console.log(geojson);
+    // for (let feature of geojson.features) {
+    //     var count = 0;
+    //     for (let ride of data) {
+    //         if (d3.geoContains(feature.geometry, [ride.start_lng, ride.start_lat])) {
+    //             count += 1;
+    //         }
+    //     }
+    //     console.log(count);
+    // }
 }
