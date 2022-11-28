@@ -35,8 +35,9 @@
 }
 
 #line-chart {
+  margin-right: 0;
   width:50%;
-  height: 50%;
+  height: 100%;
   color: red;
   background-color: yellow;
 }

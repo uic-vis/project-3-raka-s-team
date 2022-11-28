@@ -65,28 +65,30 @@ function brushMap(coordinates, zoom) {
         
         // update the circles, colour the ones within the brush
         updateCircles(window.data, layer);
+        let filtered = filterData(window.data, layer);
+        console.log(filtered.length);
     });
 
     // const data = loadData("/data/divvy_dataset.csv", function() {console.log("done")});
-    addCircles(map, window.data, 0);
+    addCircles(map, window.data, 1000);
 
 
     // ref: https://github.com/Leaflet/Leaflet.heat
-    const normalPoints = [];
-    const electricPoints = [];
-    for (let ride of window.data) {
-        if (ride.rideable_type === 'electric_bike') {
-            electricPoints.push(ride.map_circle.getLatLng());
-        } else {
-            normalPoints.push(ride.map_circle.getLatLng());
-        }
-    }
+    // const normalPoints = [];
+    // const electricPoints = [];
+    // for (let ride of window.data) {
+    //     if (ride.rideable_type === 'electric_bike') {
+    //         electricPoints.push(ride.map_circle.getLatLng());
+    //     } else {
+    //         normalPoints.push(ride.map_circle.getLatLng());
+    //     }
+    // }
 
-    L.heatLayer(electricPoints, {
-        radius: 25,
-        gradient: {0.5: '#ff8ff4', 0.97: '#e831d6', 1: '#850077'},
-        blur: 20,
-    }).addTo(map);
+    // L.heatLayer(electricPoints, {
+    //     radius: 25,
+    //     gradient: {0.5: '#ff8ff4', 0.97: '#e831d6', 1: '#850077'},
+    //     blur: 20,
+    // }).addTo(map);
     // L.heatLayer(normalPoints, {
     //     radius: 25,
     //     // gradient: {0.4: '#98def5', 0.65: '#34a8cf', 1: '#004359'},
@@ -125,8 +127,15 @@ function addCircles(map, data, pointsToRender) {
     }
 }
 
+// TODO: We could prpbably merge the following 2 functions together.
+
+/**
+ * update the colour of the selected circles
+ * @param {Array} data all Divvy data
+ * @param {Array} brush Leaflet polygon
+ */
 function updateCircles(data, brush) {
-    console.log(data);
+    // console.log(data);
     for (let ride of data) {
         if (brush.contains(ride.map_circle.getLatLng())) {
             ride.map_circle.setStyle({
@@ -142,4 +151,26 @@ function updateCircles(data, brush) {
             });
         }
     }
+}
+
+
+/**
+ * Return only the points in the data that are within the polygon
+ * @param {Array} data pre-filtered data
+ * @param {Array} polygon Leaflet polygon
+ * @returns {Array} data of all points inside polygon
+ */
+function filterData(data, polygon) {
+    console.log(data);
+    console.log(polygon);
+    const final = [];
+    // return data.filter(function(d) {
+    //     polygon.contains(d.map_circle.getLatLng());
+    // });
+    for (let ride of data) {
+        if (polygon.contains(ride.map_circle.getLatLng())) {
+            final.push(ride);
+        }
+    }
+    return final;
 }
