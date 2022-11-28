@@ -185,7 +185,8 @@ function filterData(data, polygon) {
 function updatePoints(data, polygon) {
     const final = [];
     for (let ride of data) {
-        if (brush.contains(ride.map_circle.getLatLng())) {
+        // if (brush.contains(ride.map_circle.getLatLng())) {
+        if (d3.geoContains(polygon.toGeoJSON(), [ride.start_lng, ride.start_lat])) {
             ride.map_circle.setStyle({
                 color: (ride.rideable_type == 'electric_bike') ? LYFTPINK : DIVVYBLUE,
                 fillColor: (ride.rideable_type == 'electric_bike') ? LYFTPINK : DIVVYBLUE,
