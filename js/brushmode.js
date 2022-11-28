@@ -60,13 +60,14 @@ function brushMap(coordinates, zoom) {
         // editableLayers.removeLayer(window.prevLayer);
         // window.prevLayer = layer;
         editableLayers.addLayer(layer);
-        brush = layer.toGeoJSON();
-        console.log(brush);
+        console.log(layer);
+        // brush = layer.toGeoJSON();
+        // console.log(brush);
         
         // update the circles, colour the ones within the brush
         updateCircles(window.data, layer);
         let filtered = filterData(window.data, layer);
-        console.log(filtered.length);
+        console.log(filtered);
     });
 
     // const data = loadData("/data/divvy_dataset.csv", function() {console.log("done")});
@@ -161,8 +162,8 @@ function updateCircles(data, brush) {
  * @returns {Array} data of all points inside polygon
  */
 function filterData(data, polygon) {
-    console.log(data);
-    console.log(polygon);
+    // console.log(data);
+    // console.log(polygon);
     const final = [];
     // return data.filter(function(d) {
     //     polygon.contains(d.map_circle.getLatLng());
@@ -170,6 +171,33 @@ function filterData(data, polygon) {
     for (let ride of data) {
         if (polygon.contains(ride.map_circle.getLatLng())) {
             final.push(ride);
+        }
+    }
+    return final;
+}
+
+/**
+ * recolour all the circles based on within polygon
+ * @param {Array} data full Divvy dataset
+ * @param {Object} polygon Leaflet polygon
+ * @returns filtered data
+ */
+function updatePoints(data, polygon) {
+    const final = [];
+    for (let ride of data) {
+        if (brush.contains(ride.map_circle.getLatLng())) {
+            ride.map_circle.setStyle({
+                color: (ride.rideable_type == 'electric_bike') ? LYFTPINK : DIVVYBLUE,
+                fillColor: (ride.rideable_type == 'electric_bike') ? LYFTPINK : DIVVYBLUE,
+                fillOpacity: 1
+            });
+        } else {
+            final.push(ride);
+            ride.map_circle.setStyle({
+                color: 'gray',
+                fillOpacity: 1,
+                fillColor: 'gray',
+            });
         }
     }
     return final;

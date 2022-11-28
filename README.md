@@ -33,7 +33,7 @@ For each mode, we propose to use the following Leaflet functionalities:
 | Brush Mode | Slider Mode | Select Mode |
 | :----------: | :-----------: | :-----------: |
 | Leaflet Draw | N/A | Leaflet Heatmap |
-| ![](images/L-draw-brush-mode-concept.png) | TBD | ![](images/L-geojson-heatmap-concept.png) |
+| ![](images/L-draw-brush-mode-concept.png) | TBD | ![](images/L-heatmap-concept.png) |
 | Restrict to only the polygon drawing tool | We don't plan to add any map layers here. | We plan to change this to use [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat) |
 
 ## 👥 Group Members

@@ -15,8 +15,8 @@ function selectMap(coordinates, zoom) {
     }).addTo(map);
 
     var options = {
-        member_electric: false,
-        member_normal: false,
+        member_electric: true,
+        member_normal: true,
         casual_electric: true,
         casual_normal: true,
     }
@@ -24,7 +24,7 @@ function selectMap(coordinates, zoom) {
     let selectedData = select(window.data, options);
     console.log(selectedData.length);
     
-    let points = selectedData.map(d => [d.start_lat, d.start_lng, 1]);
+    let points = selectedData.map(d => [d.start_lat, d.start_lng, 0.3]);
     L.heatLayer(points, {
         radius: 25,
         // gradient: {0.5: '#ff8ff4', 0.97: '#e831d6', 1: '#850077'},
