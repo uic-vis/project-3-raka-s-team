@@ -3,9 +3,9 @@
  * @param {Array} coordinates centre point of the map, i.e [45.0, -87.4]
  * @param {Number} zoom how big the map is, preferably 11 to 14
  */
-function selectMap(coordinates, zoom, geojson) {
+function selectMap(coordinates, zoom) {
 
-    updateJson(window.data, geojson);
+    // updateJson(window.data, geojson);
 
     var map = L.map('map').setView(coordinates, zoom);
 
@@ -14,33 +14,58 @@ function selectMap(coordinates, zoom, geojson) {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    function style1(feature) {
-        return {
-            // fillColor: getColor(feature.properties.density),
-            fillColor: "#ff00ff",
-            // fillColor: colorScale(feature.properties.density),
-            weight: 2,
-            opacity: 1,
-            color: 'black',
-            dashArray: '1',
-            fillOpacity: 0.7
-        };
+    var options = {
+        member_electric: false,
+        member_normal: false,
+        casual_electric: true,
+        casual_normal: true,
     }
 
-    L.geoJSON(geojson, {style: style1}).addTo(map);
-
+    let selectedData = select(window.data, options);
+    console.log(selectedData.length);
+    
+    let points = selectedData.map(d => [d.start_lat, d.start_lng, 1]);
+    L.heatLayer(points, {
+        radius: 25,
+        // gradient: {0.5: '#ff8ff4', 0.97: '#e831d6', 1: '#850077'},
+        blur: 20,
+    }).addTo(map);
 }
 
-function updateJson(data, geojson) {
-    console.log(data);
-    console.log(geojson);
-    // for (let feature of geojson.features) {
-    //     var count = 0;
-    //     for (let ride of data) {
-    //         if (d3.geoContains(feature.geometry, [ride.start_lng, ride.start_lat])) {
-    //             count += 1;
-    //         }
-    //     }
-    //     console.log(count);
-    // }
+/**
+ * Given selected options (pie chart interaction), return the data associated
+ * with the proper options
+ * @param {Array} data all Divvy Data
+ * @param {Object} options object with 4 boolean values, representing pie chart segments
+ * @returns filtered data
+ */
+function select(data, options) {
+    const final = [];
+    for (let ride of data) {
+        if (options.member_electric) {
+            if (ride.rideable_type === 'electric_bike' && ride.member_casual === 'member') {
+                final.push(ride);
+                continue;
+            }
+        }
+        if (options.member_normal) {
+            if (ride.rideable_type != 'electric_bike' && ride.member_casual === 'member') {
+                final.push(ride);
+                continue;
+            }
+        }
+        if (options.casual_electric) {
+            if (ride.rideable_type === 'electric_bike' && ride.member_casual === 'casual') {
+                final.push(ride);
+                continue;
+            }
+        }
+        if (options.casual_normal) {
+            if (ride.rideable_type != 'electric_bike' && ride.member_casual === 'casual') {
+                final.push(ride);
+                continue;
+            }
+        }
+    }
+    return final;
 }
