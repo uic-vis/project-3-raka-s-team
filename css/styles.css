@@ -33,3 +33,10 @@
 .leaflet-draw-actions {
   z-index: 10000;
 }
+
+#line-chart {
+  width:50%;
+  height: 50%;
+  color: red;
+  background-color: yellow;
+}
