@@ -32,9 +32,9 @@ For each mode, we propose to use the following Leaflet functionalities:
 
 | Brush Mode | Slider Mode | Select Mode |
 | :----------: | :-----------: | :-----------: |
-| Leaflet Draw | N/A | Leaflet Heatmap |
-| ![](images/L-draw-brush-mode-concept.png) | TBD | ![](images/L-heatmap-concept.png) |
-| Restrict to only the polygon drawing tool | We don't plan to add any map layers here. | We plan to change this to use [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat) |
+| Leaflet Draw | Leaflet Circles | Leaflet Heatmap |
+| ![](images/L-draw-concept.png) | ![](images/L-scatterpoints-concept.png) | ![](images/L-heatmap-corrected-concept.png) |
+| Use the _polygon_ and _rectangle_ drawing tools. | Display the same points as in _Brush Mode_. | Density visualisation using [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat) |
 
 ## 👥 Group Members
 
