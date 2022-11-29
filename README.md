@@ -60,6 +60,14 @@ For each mode, we propose to use the following Leaflet functionalities:
 | ![](images/L-draw-concept.png) | ![](images/L-scatterpoints-concept.png) | ![](images/L-heatmap-corrected-concept.png) |
 | Use the _polygon_ and _rectangle_ drawing tools. | Display the same points as in _Brush Mode_. | Density visualisation using [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat) |
 
+## 📸 Screenshots
+
+| Home | Slider Mode |
+| :--------: | :---------: |
+| ![](images/screenshot-home.png) | ![](images/screenshot-slidermode.png) |
+| **Select Mode** | **Brush mode** | 
+| ![](images/screenshot-selectmode.png) | ![](images/screenshot-brushmode.png) |
+
 ## References
 
 - [Divvy Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
