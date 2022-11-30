@@ -2,8 +2,9 @@
 
 ## 🌎 Webpage Link
 
-- [Our Webpage](https://duynguyen2001.github.io/Project3CS424/), hosted with **GitHub Pages**.
-- [Repository hosting Webpage](https://github.com/duynguyen2001/Project3CS424).
+> ### [Our Webpage](https://duynguyen2001.github.io/Project3CS424/), hosted with **GitHub Pages**.
+
+Link to the [repository](https://github.com/duynguyen2001/Project3CS424) hosting the source code.
 
 ## 🧾 Logistics
 
@@ -65,7 +66,7 @@ For **Q07**, our idea behind that was to simply compare trip distances and durat
 
 Additional data question for this project:
 
-- Q08: Given the type of member and the type of bike, how are Divvy rides concentrated in Chicago?
+- Q08: Given the _type of member_ and the _type of bike_, how are Divvy rides _concentrated_ in Chicago?
 
 We thought it would be a good opportunity to implement a select-type interaction where the user can choose which member/bike type they're interested in finding out the answer for **Q04**.
 
@@ -127,16 +128,6 @@ For this project, we are deciding to use [React](https://reactjs.org/) to build 
 
 In this repository, all the code is located in the `Project3CS424/cs424-project3/` folder. `Project3CS424/` is the root directory for our webpage, it's a copy of the repository we used for GitHub Pages.
 
-## 🍂 Leaflet Concepts
-
-For each mode, we propose to use the following Leaflet functionalities:
-
-| Brush Mode | Slider Mode | Select Mode |
-| :----------: | :-----------: | :-----------: |
-| Leaflet Draw | Leaflet Circles | Leaflet Heatmap |
-| ![](images/L-draw-concept.png) | ![](images/L-scatterpoints-concept.png) | ![](images/L-heatmap-corrected-concept.png) |
-| Use the _polygon_ and _rectangle_ drawing tools. | Display the same points as in _Brush Mode_. | Density visualisation using [Leaflet Heatmap](https://github.com/Leaflet/Leaflet.heat) |
-
 ## 📸 Screenshots
 
 In this description, we provide brief overviews of our finalised modes.
@@ -147,7 +138,21 @@ In this description, we provide brief overviews of our finalised modes.
 | This is the home page, shown upon loading the website. | Slider mode is a simple single view scatterplot, showing distribution of ride distances and durations given a window of time (1 hour). The slider here is used to move the window of time in 15 minute intervals. |
 | **Select Mode** | **Brush mode** | 
 | ![](images/screenshot-selectmode.png) | ![](images/screenshot-brushmode.png) |
-| Select mode is a static display of our pie chart showing the proportion of ridership for different bike and member types. This plot has checkboxes as well. Paired with a heatmap layer, the checkboxes filter the data that is to be displayed on the map. | Brush mode allows the viewer to select an area of the map, using a rectangle or a polygon tool. Data from the points within the shape drawn is reflected in the line plot, which represents the ridership per hour of day. |
+| Select mode is a static display of our pie chart showing the proportion of ridership for different bike and member types. This plot has checkboxes as well. Paired with a heatmap layer which shows ridership density, the checkboxes filter the data that is to be displayed on the map. | Brush mode allows the viewer to select an area of the map, using a rectangle or a polygon tool. Data from the points within the shape drawn is reflected in the line plot, which represents the ridership per hour of day. |
+
+## 🕵️ Findings
+
+### Select Mode
+
+The most interesting takeaway from this data is the fact that for casual members, electric bike ridership has surpassed 50% of all rides this October. A massive increase compared to last September's 40% ratio (Project 2 results). As for the density heatmap, we can see that members occupy a larger area of Chicago, which contradicts our hypothesis of **Q04**. As for the different bike types, electric bikes do seem to occupy a larger area, but not by as much difference as the differenct member types.
+
+### Slider Mode
+
+Similar to our findings from Project 2, we see that there are a lot more rides that happen during the afternoon times as opposed to morning times, thus naturally creating more rides that go farther and for longer. A speed separation between the two types of bikes can also be seen.
+
+### Brush mode
+
+Similar to Project 2, we see that most of the rides that happen in the UIC area happen at around afternoon time. Difference is that this time, most of the rides are concentrated around 4pm rather than 2pm (Project 2 results). We're not quite sure why that is because at that point, Daylight Savings wouldn't have happened yet.
 
 ## ✅ Task Completion
 
@@ -174,7 +179,7 @@ Our new spatial view plot is the heatmap in **select mode**, also part of the pr
 ### Task 5
 
 1. This `README.md` is the markdown documentation.
-2. Souce code is located in the `Project3CS424/` folder.
+2. Source code is located in the `Project3CS424/` folder.
 3. Screenshots of the web page can be found in the [📸 screenshots](#📸-screenshots) section or in the `images/` folder.
 4. Web page is linked [here](https://duynguyen2001.github.io/Project3CS424/).
 5. Presentation was done on Tuesday 29 November 2022 in class.
