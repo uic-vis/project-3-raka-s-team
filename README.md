@@ -2,7 +2,8 @@
 
 ## 🌎 Webpage Link
 
-- [Our Webpage](https://duynguyen2001.github.io/Project3CS424/), hosted with **GitHub Pages**
+- [Our Webpage](https://duynguyen2001.github.io/Project3CS424/), hosted with **GitHub Pages**.
+- [Repository hosting Webpage](https://github.com/duynguyen2001/Project3CS424).
 
 ## 🧾 Logistics
 
