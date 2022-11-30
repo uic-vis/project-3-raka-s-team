@@ -139,11 +139,15 @@ For each mode, we propose to use the following Leaflet functionalities:
 
 ## 📸 Screenshots
 
+In this description, we provide brief overviews of our finalised modes.
+
 | Home | Slider Mode |
 | :--------: | :---------: |
 | ![](images/screenshot-home.png) | ![](images/screenshot-slidermode.png) |
+| This is the home page, shown upon loading the website. | Slider mode is a simple single view scatterplot, showing distribution of ride distances and durations given a window of time (1 hour). The slider here is used to move the window of time in 15 minute intervals. |
 | **Select Mode** | **Brush mode** | 
 | ![](images/screenshot-selectmode.png) | ![](images/screenshot-brushmode.png) |
+| Select mode is a static display of our pie chart showing the proportion of ridership for different bike and member types. This plot has checkboxes as well. Paired with a heatmap layer, the checkboxes filter the data that is to be displayed on the map. | Brush mode allows the viewer to select an area of the map, using a rectangle or a polygon tool. Data from the points within the shape drawn is reflected in the line plot, which represents the ridership per hour of day. |
 
 ## ✅ Task Completion
 
