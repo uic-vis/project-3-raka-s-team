@@ -126,7 +126,7 @@ Upon discussing, we eventually aggred to have three modes: brush mode, slider mo
 
 For this project, we are deciding to use [React](https://reactjs.org/) to build our website.
 
-In this repository, all the code is located in the `Project3CS424/cs424-project3/` folder. `Project3CS424/` is the root directory for our webpage, it's a copy of the repository we used for GitHub Pages.
+In this repository, all the code is located in the `ReactJS/cs424-project3/` folder. `ReactJS/` is the root directory for our webpage, it's a copy of the repository we used for GitHub Pages.
 
 ## 📸 Screenshots
 
@@ -179,7 +179,7 @@ Our new spatial view plot is the heatmap in **select mode**, also part of the pr
 ### Task 5
 
 1. This `README.md` is the markdown documentation.
-2. Source code is located in the `Project3CS424/` folder.
+2. Source code is located in the `ReactJS/` folder.
 3. Screenshots of the web page can be found in the [📸 screenshots](#📸-screenshots) section or in the `images/` folder.
 4. Web page is linked [here](https://duynguyen2001.github.io/Project3CS424/).
 5. Presentation was done on Tuesday 29 November 2022 in class.
